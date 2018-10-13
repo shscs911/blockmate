@@ -4,15 +4,19 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.json",
-    "dev": "node server.js",
+    "start": "npm-run-all --parallel server client",
+    "server": "nodemon server.js",
+    "client": "ng serve --proxy-config proxy.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "6.2.4",
+    "@angular/compiler-cli": "^6.1.9",
     "@angular/animations": "^6.1.9",
     "@angular/common": "^6.1.9",
     "@angular/compiler": "^6.1.9",
@@ -30,11 +34,11 @@
     "mongoose": "^5.3.1",
     "npm-run-all": "^4.1.3",
     "rxjs": "^6.3.3",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "typescript": "^2.7.2"
   },
   "devDependencies": {
-    "@angular/cli": "6.2.4",
-    "@angular/compiler-cli": "^6.1.9",
+    "@angular-devkit/build-angular": "~0.8.0",
     "@angular/language-service": "^6.1.9",
     "@types/jasmine": "~2.8.9",
     "@types/jasminewd2": "~2.0.2",
@@ -50,7 +54,6 @@
     "karma-jasmine-html-reporter": "^1.3.1",
     "protractor": "~5.4.1",
     "ts-node": "~7.0.1",
-    "tslint": "~5.11.0",
-    "typescript": "~3.1.1"
+    "tslint": "~5.11.0"
   }
 }
