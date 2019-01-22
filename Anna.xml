@@ -1,0 +1,16 @@
+<rss version="2.0">
+<channel>
+<title>rarbg</title>
+<link>https://torrentapi.org/apidocs_v2.txt</link>
+<ttl>15</ttl>
+<item>
+<title>
+Anna.and.the.Apocalypse.2017.WEB-DL.x264-FGT (899.7M)
+</title>
+<description/>
+<guid>8ec772e349134be68c48c42a9263292927acf36c</guid>
+<pubDate>Mon, 14 Jan 2019 20:49:23 -0000</pubDate>
+<enclosure url="magnet:?xt=urn:btih:8ec772e349134be68c48c42a9263292927acf36c&dn=Anna.and.the.Apocalypse.2017.WEB-DL.x264-FGT&tr=http%3A%2F%2Ftracker.trackerfix.com%3A80%2Fannounce&tr=udp%3A%2F%2F9.rarbg.me%3A2710&tr=udp%3A%2F%2F9.rarbg.to%3A2710&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce" length="943390307" type="application/x-bittorrent"/>
+</item>
+</channel>
+</rss>
